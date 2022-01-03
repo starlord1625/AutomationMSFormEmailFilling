@@ -1,4 +1,5 @@
 # AutomationMSFormEmailFilling
+This project is used to automatically give the access to MSforms for the specified emails in a excel sheet without doing manual typing of each Email Id to give the access.
 use intellij idea for better build of project
 # Download and include follwing libraries in the project
 1.jdk-16
