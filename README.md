@@ -19,3 +19,4 @@ use intellij idea for better build of project
 1. include ms forms password in project
 2. Download and add location of chrome driver into prject from here : https://chromedriver.chromium.org/downloads
 3. Change the string baseUrl in the project for your forms
+4. Chane the location of excel sheet containing email list at string emailList
