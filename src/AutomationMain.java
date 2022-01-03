@@ -32,6 +32,7 @@ public class AutomationMain
         WebDriver driver = new ChromeDriver();
         //url of forms
         String baseUrl = "https://forms.office.com/Pages/DesignPage.aspx?auth_pvr=OrgId&auth_upn=harshalimi%40iitkgp.ac.in&origin=OfficeDotCom&lang=en-GB&route=Start#FormId=IrXbcQRXN0WfJWrS3NQnjYhOqajV03JEnLwM7xkC7h9UOTBXNTVXTDVES1M5VDZVRFIyMzBYVUZVVS4u&FlexPane=SendForm";
+        String emailList = "E:\\info\\iitkgpDomains.xlsx";
 
         // maximise the window
         driver.manage().window().maximize();
@@ -69,7 +70,7 @@ public class AutomationMain
         //driver.findElement(By.xpath(shareButton)).click();
         try
         {
-            File file = new File("E:\\info\\iitkgpDomains.xlsx");   //creating a new file instance and location of xlsx folder
+            File file = new File(emailList);   //creating a new file instance and location of xlsx folder
             FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file
             //creating Workbook instance that refers to .xlsx file
             XSSFWorkbook wb = new XSSFWorkbook(fis);
